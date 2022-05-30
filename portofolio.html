@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Sebuoeng Phera</title>
+<style>
+.navbar{
+  background-color: lightgrey;
+  overflow: hidden;
+  top: 0;
+   right: 0;
+  left: 0;
+  height: 10%;
+  width: 100%;
+
+  }
+.navbar a.active{
+  background-color: black;
+  color: white;
+  }
+.navbar a{
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 20px 80px;
+  text-decoration: none;
+  font-size: 15px;
+
+  }
+li:hover{
+  background-color: white;
+  color: black;
+  }
+    
+.navbar a:hover{
+  background-color: black;
+  color: white;
+  }
+body {
+  background-color: white;
+  padding: 20px;
+  font-family: Arial;
+}
+footer {
+  right: 0;
+  left: 0;
+  height: 13%;
+  width: 100%;
+  bottom: 0;
+  background-color: lightgrey;
+    }
+
+header {
+  background-image:url("Snapchat-71321589.jpg");
+  padding: 10%;
+  text-align: center;
+  font-size: 35px;
+  color: lightgrey;
+}
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.column {
+  -ms-flex: 50%; 
+  flex: 50%;
+  padding: 0 4px;
+}
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+.button {
+  text-align: center;
+  padding: 32px;
+}
+.btn {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-size: 18px;
+}
+.btn:hover {
+  background-color: lightgrey;
+}
+.btn.active {
+  background-color: grey;
+  color: white;
+}
+
+</style>
+</head>
+<body>
+<div class="navbar">
+<a href="index.html" >Home</a>
+<a href="About.html">About</a>
+<a class="active" href="portofolio.html">Portfolio</a>
+<a href="contacts.html">Contacts</a>
+</div>
+
+<header>
+<h1>My portfolio.</h1>
+<p>Clothing and Fashion Designer.</p>
+</header>
+
+<div class="button" id="myHeader">
+  <h1>My Portfolio</h1>
+  <p>Press 4 to view all images</p>
+  <button class="btn" onclick="four()">4</button>
+</div>
+<div class="row"> 
+  <div class="column">
+    <img src="air-jordan-3-retro-white-chrome-dark-mocha-release-date.gif" style="width:100%">
+    <img src="47b70995625863.5e9bffad501a6.gif" style="width:100%">
+    <img src="d19558c9c55fd228ab81852369dbe4a8.gif" style="width:100%">
+    <img src="AF-1-VALENTINE-GIF.gif" style="width:100%">
+    <img src="08d3354d67b49b7703e4acd60743088b.gif" style="width:100%">
+    <img src="MixedCloudyAmberpenshell-size_restricted.gif" style="width:100%">
+    <img src="tumblr_molhbb6X7U1s1qgago1_500.gif" style="width:100%">
+    <img src="b195b41603b381699fb178ebd01036ce.jpg" style="width:100%">
+    <img src="IMG_20210701_110325_931.jpg" style="width:100%">
+    <img src="fashion-designer.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="Air-Jordan-4-White-Oreo-Tech-CT8527-100-Release-Date.jpg" style="width:100%">
+    <img src="e1a8a22e76f66362cf462e394c60d8b3.jpg" style="width:100%">
+    <img src="nike-shoes-streetwear-nike-art-prem-vishal.jpg" style="width:100%">
+    <img src="IMG_20220202_212458_187.jpg" style="width:100%">
+    <img src="IMG_20220202_212627_469.jpg" style="width:100%">
+    <img src="a9dae4d0d9a8c08fccfc2b54035f0673.jpg" style="width:100%">
+    <img src="FB_IMG_16276237357710931.jpg" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="0181d1bfad0b1b41b38262969908f2b2.jpg" style="width:100%">
+    <img src="AdobeStock_233207019.jpeg" style="width:100%">
+    <img src="b152d5165b4ad635bd044de355941ecd.jpg" style="width:100%">
+    <img src="25002c2e52779f2cce1b6fdb92d43ddd.jpg" style="width:100%">
+    <img src="3d60936a0ceaf8e4a2445121c6206652.jpg" style="width:100%">
+    <img src="4ad3d55e98895749b897062c2a6cc80f.jpg" style="width:100%">
+     <img src="Differences-Between-Fashion-Designers-and-Fashion-Stylist.jpg" style="width:100%">
+     <img src="FB_IMG_16277945785867382.jpg" style="width:100%">
+  
+  </div>
+</div>
+<script>
+var elements = document.getElementsByClassName("column");
+var i;
+function four() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "25%";  
+    elements[i].style.flex = "25%";
+  }
+}
+</script>
+
+<footer>
+<p>Created by:Sebuoeng Phera<br>Date:23 March 2020<br>
+<a href="Phera:sebuoengphera78@gmail.com">sebuoengphera78@gmail.com</a></p>
+</footer>
+</body>
+</html>
